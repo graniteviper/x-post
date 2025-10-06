@@ -9,6 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
+import Image from "next/image";
 
 interface NavbarProps {
   anonymousPostsUsed?: number;
@@ -39,7 +40,7 @@ const Navbar = ({ anonymousPostsUsed = 0 }: NavbarProps) => {
           <DropdownMenuTrigger asChild>
             <button className="p-2 rounded-full hover:bg-white/10 cursor-pointer overflow-hidden">
               {session?.user?.image ? (
-                <img
+                <Image
                   src={session.user.image}
                   alt="User Avatar"
                   className="w-8 h-8 rounded-full object-cover"
