@@ -71,3 +71,16 @@ const MainBox = ({ onGenerate, disableGenerate }: MainBoxProps) => {
 };
 
 export default MainBox;
+
+
+
+
+
+
+
+
+
+
+
+
+
